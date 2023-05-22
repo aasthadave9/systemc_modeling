@@ -13,6 +13,8 @@ private:
 	sc_signal<unsigned int> rd_ptr;
 	sc_signal<unsigned int> wr_ptr;
 
+	SC_HAS_PROCESS(fifo_1a);
+
 public:
 	// ports declaration
 	sc_in<bool> clk;
@@ -30,6 +32,6 @@ public:
 
 	// ############# COMPLETE THE FOLLOWING SECTION ############# //
 	// constructor declaration
-
+	fifo_1a(sc_module_name name, unsigned int fifo_size);
 	// ####################### UP TO HERE ####################### //
 };

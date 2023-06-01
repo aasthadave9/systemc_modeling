@@ -1,0 +1,454 @@
+$date
+     Jun 01, 2023       15:25:24
+$end
+
+$version
+ SystemC 2.3.3-Accellera --- May  8 2023 23:53:52
+$end
+
+$timescale
+     1 ps
+$end
+
+$scope module SystemC $end
+$var wire    1  aaaaa  clk       $end
+$var wire    1  aaaab  fetch       $end
+$var wire   32  aaaac  fifo_fill_level [31:0]  $end
+$var wire    1  aaaad  send       $end
+$var wire    1  aaaae  fifo_valid       $end
+$var wire    1  aaaaf  rd_en       $end
+$var wire    8  aaaag  fifo_out [7:0]  $end
+$var wire    1  aaaah  fifo_full       $end
+$var wire    1  aaaai  wr_en       $end
+$var wire    8  aaaaj  fifo_in [7:0]  $end
+$upscope $end
+$enddefinitions  $end
+
+$comment
+All initial values are dumped below at time 0 sec = 0 timescale units.
+$end
+
+$dumpvars
+1aaaaa
+0aaaab
+b0 aaaac
+0aaaad
+0aaaae
+0aaaaf
+b11111111 aaaag
+0aaaah
+0aaaai
+b11111111 aaaaj
+$end
+
+#50000
+0aaaaa
+
+#100000
+1aaaaa
+
+#150000
+0aaaaa
+
+#200000
+1aaaaa
+
+#250000
+0aaaaa
+
+#300000
+1aaaaa
+1aaaad
+1aaaai
+b0 aaaaj
+
+#350000
+0aaaaa
+
+#400000
+1aaaaa
+b1 aaaac
+0aaaad
+1aaaae
+b0 aaaag
+0aaaai
+
+#450000
+0aaaaa
+
+#500000
+1aaaaa
+1aaaab
+1aaaaf
+
+#550000
+0aaaaa
+
+#600000
+1aaaaa
+0aaaab
+b0 aaaac
+1aaaad
+0aaaae
+0aaaaf
+1aaaai
+b1 aaaaj
+
+#650000
+0aaaaa
+
+#700000
+1aaaaa
+b1 aaaac
+0aaaad
+1aaaae
+b1 aaaag
+0aaaai
+
+#750000
+0aaaaa
+
+#800000
+1aaaaa
+1aaaad
+1aaaai
+b10 aaaaj
+
+#850000
+0aaaaa
+
+#900000
+1aaaaa
+b10 aaaac
+0aaaad
+0aaaai
+
+#950000
+0aaaaa
+
+#1000000
+1aaaaa
+
+#1050000
+0aaaaa
+
+#1100000
+1aaaaa
+1aaaab
+1aaaad
+1aaaaf
+1aaaai
+b11 aaaaj
+
+#1150000
+0aaaaa
+
+#1200000
+1aaaaa
+0aaaab
+0aaaad
+0aaaaf
+b10 aaaag
+0aaaai
+
+#1250000
+0aaaaa
+
+#1300000
+1aaaaa
+
+#1350000
+0aaaaa
+
+#1400000
+1aaaaa
+1aaaad
+1aaaai
+b100 aaaaj
+
+#1450000
+0aaaaa
+
+#1500000
+1aaaaa
+b11 aaaac
+b101 aaaaj
+
+#1550000
+0aaaaa
+
+#1600000
+1aaaaa
+1aaaab
+b100 aaaac
+1aaaaf
+b110 aaaaj
+
+#1650000
+0aaaaa
+
+#1700000
+1aaaaa
+0aaaab
+0aaaaf
+b11 aaaag
+b111 aaaaj
+
+#1750000
+0aaaaa
+
+#1800000
+1aaaaa
+b101 aaaac
+b1000 aaaaj
+
+#1850000
+0aaaaa
+
+#1900000
+1aaaaa
+b110 aaaac
+1aaaah
+b1001 aaaaj
+
+#1950000
+0aaaaa
+
+#2000000
+1aaaaa
+1aaaab
+1aaaaf
+
+#2050000
+0aaaaa
+
+#2100000
+1aaaaa
+b101 aaaac
+b100 aaaag
+0aaaah
+
+#2150000
+0aaaaa
+
+#2200000
+1aaaaa
+0aaaab
+0aaaaf
+b101 aaaag
+b1010 aaaaj
+
+#2250000
+0aaaaa
+
+#2300000
+1aaaaa
+1aaaab
+b110 aaaac
+1aaaaf
+1aaaah
+b1011 aaaaj
+
+#2350000
+0aaaaa
+
+#2400000
+1aaaaa
+b101 aaaac
+0aaaad
+b110 aaaag
+0aaaah
+0aaaai
+
+#2450000
+0aaaaa
+
+#2500000
+1aaaaa
+b100 aaaac
+1aaaad
+b111 aaaag
+1aaaai
+
+#2550000
+0aaaaa
+
+#2600000
+1aaaaa
+0aaaad
+b1000 aaaag
+0aaaai
+
+#2650000
+0aaaaa
+
+#2700000
+1aaaaa
+b11 aaaac
+b1001 aaaag
+
+#2750000
+0aaaaa
+
+#2800000
+1aaaaa
+b10 aaaac
+b1010 aaaag
+
+#2850000
+0aaaaa
+
+#2900000
+1aaaaa
+b1 aaaac
+b1011 aaaag
+
+#2950000
+0aaaaa
+
+#3000000
+1aaaaa
+b0 aaaac
+0aaaae
+
+#3050000
+0aaaaa
+
+#3100000
+1aaaaa
+
+#3150000
+0aaaaa
+
+#3200000
+1aaaaa
+
+#3250000
+0aaaaa
+
+#3300000
+1aaaaa
+0aaaab
+0aaaaf
+
+#3350000
+0aaaaa
+
+#3400000
+1aaaaa
+
+#3450000
+0aaaaa
+
+#3500000
+1aaaaa
+1aaaab
+1aaaaf
+
+#3550000
+0aaaaa
+
+#3600000
+1aaaaa
+0aaaab
+0aaaaf
+
+#3650000
+0aaaaa
+
+#3700000
+1aaaaa
+
+#3750000
+0aaaaa
+
+#3800000
+1aaaaa
+
+#3850000
+0aaaaa
+
+#3900000
+1aaaaa
+
+#3950000
+0aaaaa
+
+#4000000
+1aaaaa
+1aaaab
+1aaaaf
+
+#4050000
+0aaaaa
+
+#4100000
+1aaaaa
+0aaaab
+0aaaaf
+
+#4150000
+0aaaaa
+
+#4200000
+1aaaaa
+
+#4250000
+0aaaaa
+
+#4300000
+1aaaaa
+
+#4350000
+0aaaaa
+
+#4400000
+1aaaaa
+
+#4450000
+0aaaaa
+
+#4500000
+1aaaaa
+
+#4550000
+0aaaaa
+
+#4600000
+1aaaaa
+1aaaab
+1aaaad
+1aaaaf
+1aaaai
+b1100 aaaaj
+
+#4650000
+0aaaaa
+
+#4700000
+1aaaaa
+0aaaab
+0aaaad
+0aaaaf
+b1100 aaaag
+0aaaai
+
+#4750000
+0aaaaa
+
+#4800000
+1aaaaa
+
+#4850000
+0aaaaa
+
+#4900000
+1aaaaa
+1aaaad
+1aaaai
+b1101 aaaaj
+
+#4950000
+0aaaaa
+
+#5000000

@@ -3,6 +3,8 @@
 
 // ############# COMPLETE THE FOLLOWING SECTION ############# //
 // include the necessary header files
+#include "systemc.h"
+#include "fifo_if.h"
 
 // ####################### UP TO HERE ####################### //
 
@@ -16,14 +18,17 @@ private:
 	// declaration of helper function
 	void output_fifo_status();
 
+	
 public:
 	// declaration of the interface functions
 	bool read_fifo(unsigned char *data, unsigned int &count);
 	bool write_fifo(unsigned char *data, unsigned int &count);
 
+	SC_HAS_PROCESS(fifo_2);
+
 	// ############# COMPLETE THE FOLLOWING SECTION ############# //
 	// constructor declaration
-
+	fifo_2(sc_module_name name, unsigned int fifo_size);
 	// ####################### UP TO HERE ####################### //
 };
 

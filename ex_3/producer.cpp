@@ -1,19 +1,20 @@
 #include <iostream>
 #include <iomanip>
+#include <mutex>
 #include "producer.h"
 
 void producer::producer_proc() {
-
 	unsigned int data_len; // number of bytes that should be written [1; 16]
 	unsigned char prod_data[16];
 	unsigned char cnt = 0;
 
 	bool success;
 
+
 	while(true) {
 		// synchronize with trigger process
 		wait(send_event);
-
+		
 		// generate random data of random length between 1 and 16 bytes
 		data_len = 1 + rand() % 16;
 		for(unsigned int i = 0; i < data_len; i++)
@@ -21,7 +22,7 @@ void producer::producer_proc() {
 
 		cout << std::setw(9) << sc_time_stamp() << ": '" << name()
 				<< "'\twants to write " << data_len << " bytes." << endl << endl;
-
+		
 		// call transaction
 		success = prod2fifo_port->write_fifo(prod_data, data_len);
 

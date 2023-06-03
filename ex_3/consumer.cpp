@@ -17,6 +17,7 @@ void consumer::consumer_proc() {
 
 		cout << std::setw(9) << sc_time_stamp() << ": '" << name()
 				<< "'\twants to read " << data_len << " bytes." << endl << endl;
+	
 		// call transaction
 		success = consum2fifo_port->read_fifo(consum_data, data_len);
 

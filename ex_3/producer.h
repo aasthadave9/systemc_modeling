@@ -3,7 +3,8 @@
 
 // ############# COMPLETE THE FOLLOWING SECTION ############# //
 // include the necessary header files
-
+#include "systemc.h"
+#include "fifo_if.h"
 // ####################### UP TO HERE ####################### //
 
 SC_MODULE(producer) {
@@ -11,7 +12,7 @@ SC_MODULE(producer) {
 public:
 	// ############# COMPLETE THE FOLLOWING SECTION ############# //
 	// declare the port of the module
-
+	sc_port<fifo_if> prod2fifo_port;
 	// ####################### UP TO HERE ####################### //
 
 private:

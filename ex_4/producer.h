@@ -11,6 +11,7 @@ SC_MODULE(producer) {
 public:
 	// ############# COMPLETE THE FOLLOWING SECTION ############# //
 	// initiator socket to connect producer to FIFO
+	simple_initiator_socket<producer> prod2fifo_socket;
 
 	// ####################### UP TO HERE ####################### //
 

@@ -11,7 +11,7 @@ SC_MODULE(consumer) {
 public:
 	// ############# COMPLETE THE FOLLOWING SECTION ############# //
 	// initiator socket to connect consumer to FIFO
-
+	simple_initiator_socket<consumer> consum2fifo_socket;
 	// ####################### UP TO HERE ####################### //
 
 private:

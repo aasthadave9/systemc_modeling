@@ -1,0 +1,76 @@
+Default simulation time = 5 us
+   300 ns: 'producer'	wants to write 8 bytes.
+   300 ns: 'producer'	waiting until transaction is finished.
+
+  1100 ns: 'fifo' 8 words have been written: 0x 00 01 02 03 04 05 06 07  
+	Current status of 'fifo': write address: 8, read address: 0, fill level: 8
+	00 01 02 03 04 05 06 07 -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+
+001100 ns: 'producer'	write confirmation coming.
+
+001200 ns: 'producer'	transaction finished successfully. 8 bytes were written.
+
+001200 ns: 'consumer'	wants to read 7 bytes.
+001200 ns: 'consumer'	waiting until transaction is finished.
+
+001300 ns: 'producer'	wants to write 10 bytes.
+001300 ns: 'producer'	waiting until transaction is finished.
+
+001900 ns: 'fifo' 7 words have been read: 0x 00 01 02 03 04 05 06  
+	Current status of 'fifo': write address: 8, read address: 7, fill level: 1
+	-- -- -- -- -- -- -- 07 -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+
+001900 ns: 'consumer'	read confirmation coming.
+
+000002 us: 'consumer'	transaction finished successfully. 7 bytes were read.
+000002 us: 'consumer'	wants to read 4 bytes.
+000002 us: 'consumer'	waiting until transaction is finished.
+
+002300 ns: 'fifo' 10 words have been written: 0x 08 09 0a 0b 0c 0d 0e 0f 10 11  
+	Current status of 'fifo': write address: 18, read address: 7, fill level: 11
+	-- -- -- -- -- -- -- 07 08 09 0a 0b 0c 0d 0e 0f 10 11 -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+
+002300 ns: 'producer'	write confirmation coming.
+
+002400 ns: 'fifo' 4 words have been read: 0x 07 08 09 0a  
+	Current status of 'fifo': write address: 18, read address: 11, fill level: 7
+	-- -- -- -- -- -- -- -- -- -- -- 0b 0c 0d 0e 0f 10 11 -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+
+002400 ns: 'consumer'	read confirmation coming.
+
+002400 ns: 'producer'	transaction finished successfully. 10 bytes were written.
+
+002500 ns: 'consumer'	transaction finished successfully. 4 bytes were read.
+000003 us: 'consumer'	wants to read 2 bytes.
+000003 us: 'consumer'	waiting until transaction is finished.
+
+003100 ns: 'producer'	wants to write 16 bytes.
+003100 ns: 'producer'	waiting until transaction is finished.
+
+003200 ns: 'fifo' 2 words have been read: 0x 0b 0c  
+	Current status of 'fifo': write address: 18, read address: 13, fill level: 5
+	-- -- -- -- -- -- -- -- -- -- -- -- -- 0d 0e 0f 10 11 -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+
+003200 ns: 'consumer'	read confirmation coming.
+
+003300 ns: 'consumer'	transaction finished successfully. 2 bytes were read.
+003800 ns: 'consumer'	wants to read 11 bytes.
+003800 ns: 'consumer'	waiting until transaction is finished.
+
+004700 ns: 'fifo' 16 words have been written: 0x 12 13 14 15 16 17 18 19 1a 1b 1c 1d 1e 1f 20 21  
+	Current status of 'fifo': write address: 34, read address: 13, fill level: 21
+	-- -- -- -- -- -- -- -- -- -- -- -- -- 0d 0e 0f 10 11 12 13 14 15 16 17 18 19 1a 1b 1c 1d 1e 1f 20 21 -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+
+004700 ns: 'producer'	write confirmation coming.
+
+004800 ns: 'producer'	transaction finished successfully. 16 bytes were written.
+
+004800 ns: 'producer'	wants to write 13 bytes.
+004800 ns: 'producer'	waiting until transaction is finished.
+
+004900 ns: 'fifo' 11 words have been read: 0x 0d 0e 0f 10 11 12 13 14 15 16 17  
+	Current status of 'fifo': write address: 34, read address: 24, fill level: 10
+	-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 18 19 1a 1b 1c 1d 1e 1f 20 21 -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+
+004900 ns: 'consumer'	read confirmation coming.
+

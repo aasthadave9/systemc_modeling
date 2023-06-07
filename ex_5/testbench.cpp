@@ -74,6 +74,7 @@ void testbench::testbench_thr() {
 			<< " seconds." << endl << endl;
 	reset();
 
+	
 	// start TEST_FIFO_1B
 	cout << std::setw(12) << sc_time_stamp() << ": '" << name()
 			<< "' starting TEST_FIFO_1B" << endl;
@@ -87,7 +88,7 @@ void testbench::testbench_thr() {
 	cout << std::setw(12) << sc_time_stamp() << ": '" << name()
 			<< "' TEST_FIFO_1B finished. Test time was " << test_time.count()
 			<< " seconds." << endl << endl;
-	reset();
+	reset(); 
 
 	// start TEST_FIFO_2
 	cout << std::setw(12) << sc_time_stamp() << ": '" << name()

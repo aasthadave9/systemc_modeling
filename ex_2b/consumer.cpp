@@ -69,5 +69,6 @@ void consumer::fetch_trigger() {
 		// try to read for 1 cycle
 		wait(100, SC_NS);
 		fetch.write(false);
+
 	}
 }

@@ -68,18 +68,28 @@ void fifo_3::read_fifo() {
 
 		// ############# COMPLETE THE FOLLOWING SECTION ############# //
 		// handle read - same as ex_3
-		//delay = sc_time(int(len*100), SC_NS);
-		//wait(delay);
+		/* delay = sc_time(int(len*100), SC_NS);
+		wait(delay);
 	
-		//read whole chunk
+		
+		cout << std::setw(9) << sc_time_stamp() << ": '" << name() << "' " << len << " words have been read: 0x " << hex;
+		for(unsigned int i = 0; i<len; i++) {
+			cout << std::setw(2) << std::setfill('0') << (int)*(fifo_data+rd_ptr) << " ";
+			memcpy((ptr+i), (fifo_data + rd_ptr), 1);
+			rd_ptr = (rd_ptr + 1)%fifo_size;
+			fill_level--;	
+		} */
+
+		
+		//read whole thing
 		if(rd_ptr+len < fifo_size) memcpy(ptr, (fifo_data+rd_ptr), len);
-	
-		//read two chunks separately
+
+		//read two parts separately
 		else {
 			memcpy(ptr, (fifo_data+rd_ptr), (fifo_size - rd_ptr)); 
-			memcpy(ptr, (fifo_data), (len-(fifo_size - rd_ptr))); 
+			memcpy((ptr + (fifo_size - rd_ptr)), fifo_data, (len-(fifo_size - rd_ptr))); 
 		} 
-	
+
 		cout << std::setw(9) << sc_time_stamp() << ": '" << name() << "' " << len << " words have been read: 0x " << hex;
 		for(unsigned int i=0; i<len; i++) {
 			cout << std::setw(2) << std::setfill('0') << (int)(*(ptr+i)) << " ";
@@ -91,6 +101,9 @@ void fifo_3::read_fifo() {
 		rd_ptr = (rd_ptr+len)%fifo_size;
 		fill_level = fill_level - len;
 		//count = len;
+
+
+
 		// ####################### UP TO HERE ####################### //
 
 		if(fifo_size <= 50)
@@ -146,16 +159,26 @@ void fifo_3::write_fifo() {
 
 		// ############# COMPLETE THE FOLLOWING SECTION ############# //
 		// handle write
-		//delay = sc_time(int(len*100), SC_NS);
-		//wait(delay);
+		/* delay = sc_time(int(len*100), SC_NS);
+		wait(delay);
 	
-		//write whole chunk
+		
+		cout << std::setw(9) << sc_time_stamp() << ": '" << name() << "' " << len << " words have been written: 0x " << hex;
+		for(unsigned int i = 0; i<len; i++) {
+			cout << std::setw(2) << std::setfill('0') << (int)*(ptr+i) << " ";
+			memcpy((fifo_data + wr_ptr), (ptr+i), 1);
+			wr_ptr = (wr_ptr + 1)%fifo_size;
+			fill_level++;	
+		} 
+		*/
+	
+		//write whole thing
 		if(wr_ptr+len < fifo_size) memcpy((fifo_data+wr_ptr), (ptr), len);
 
-		//write two chunks separately
+		//write two parts separately
 		else {
 			memcpy((fifo_data+wr_ptr), ptr, (fifo_size - wr_ptr)); 
-			memcpy((fifo_data), ptr, (len-(fifo_size - wr_ptr))); 
+			memcpy(fifo_data, (ptr+(fifo_size - wr_ptr)), (len-(fifo_size - wr_ptr))); 
 		} 
 
 
@@ -170,7 +193,7 @@ void fifo_3::write_fifo() {
 		//update wr ptr and fill level in one go
 		wr_ptr = (wr_ptr+len)%fifo_size;
 		fill_level = fill_level + len;
-		//count = len;
+		//count = len; 
 
 		// ####################### UP TO HERE ####################### //
 

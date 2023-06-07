@@ -66,5 +66,7 @@ void producer::send_trigger() {
 		send.write(false);
 		// wait 18 clock cycles, then start from the top
 		wait(1800, SC_NS);
+
+		
 	}
 }

@@ -32,27 +32,17 @@ bool fifo_2::write_fifo(unsigned char *data, unsigned int &count) {
 
 	// ############# COMPLETE THE FOLLOWING SECTION ############# //
 	// complete process
-	//memcpy from data[i] to fifo_data[i] byte by byte up until length=len and keep updating write pointer after every byte is copied. Write until write pointer reaches end of fifo. Then wrap back to fifo beginning and continue calling memcpy
-	//have delay 100ns after every byte is written to fifo
-	////update fill level
-	//decrement count after every byte written??
-	//generate messages for sim time, data written, write pointer location
-	//need logic to prevent simulataneous reads and writes
 	
 	delay = sc_time(int(len*100), SC_NS);
 	wait(delay);
 	
-	//write whole chunk
+	//write whole thing
 	if(wr_ptr+len < fifo_size) memcpy((fifo_data+wr_ptr), (ptr), len);
 
-	//write two chunks separately
+	//write two parts separately
 	else {
 		memcpy((fifo_data+wr_ptr), ptr, (fifo_size - wr_ptr)); 
-		memcpy((fifo_data), ptr, (len-(fifo_size - wr_ptr))); 
-	
-	
-	
-
+		memcpy(fifo_data, (ptr+(fifo_size - wr_ptr)), (len-(fifo_size - wr_ptr))); 
 	} 
 	
 	/*
@@ -107,16 +97,13 @@ bool fifo_2::read_fifo(unsigned char *data, unsigned int &count) {
 	delay = sc_time(int(len*100), SC_NS);
 	wait(delay);
 	
-	//read whole chunk
+	//read whole thing
 	if(rd_ptr+len < fifo_size) memcpy(ptr, (fifo_data+rd_ptr), len);
 
-	//read two chunks separately
+	//read two parts separately
 	else {
 		memcpy(ptr, (fifo_data+rd_ptr), (fifo_size - rd_ptr)); 
-		memcpy(ptr, (fifo_data), (len-(fifo_size - rd_ptr))); 
-	
-		
-
+		memcpy((ptr + (fifo_size - rd_ptr)), fifo_data, (len-(fifo_size - rd_ptr))); 
 	} 
 	/*
 	wait(100*len, SC_NS);

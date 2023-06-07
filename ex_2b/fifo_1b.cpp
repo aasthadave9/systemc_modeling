@@ -23,32 +23,20 @@ fifo_1b::fifo_1b(sc_module_name name, unsigned int fifo_size) : fifo_size(fifo_s
 }
 
 
-
-
 void fifo_1b::read_write_fifo() {
 	// ############# COMPLETE THE FOLLOWING SECTION ############# //
 
-
-	//intermediate data storage
-	unsigned char wrThData;
-	unsigned char wrData;
-	unsigned char rdData;
-	//pointer locations
-	unsigned int locr = rd_ptr.read();
-	unsigned int locw = wr_ptr.read();
 	//define flags
 	bool write_through=0, write=0, read=0;
-	
 		
 	//write through flag
-	if (fill_level == 0 && wr_en.read() == true) {
+	if (fill_level == 0 && wr_en.read()==true) {
 		write_through=1;
 		write=0;
 		fill_level++;
-
 	}
 	//write flag
-	else if (full.read() == false && wr_en.read() == true) {
+	else if (!full.read() && wr_en.read()==true) {
 		write=1;
 		write_through=0;
 		fill_level++;
@@ -59,49 +47,66 @@ void fifo_1b::read_write_fifo() {
 	}
 
 	//read flag
-	if (rd_en.read() == true && fill_level > 1) {
+	if (rd_en.read()==true && fill_level > 1 ) {
 		read=1; fill_level--;
 	}
-	else if (rd_en.read() == true && fill_level == 1) {
+	else if (rd_en.read()==true && fill_level == 1 && wr_en.read()==false) {
 		read=0; fill_level--;
 	}
-	else read=0;
+	else {
+		read=0;
+	}
 
-	if (fill_level == fifo_size+1) full.write(true); //output of fifo is part of fifo storage
-	else full.write(false);
-	if (fill_level == 0) valid.write(false);
-	else valid.write(true);
 
+	if (fill_level <= 0) {
+		valid.write(false);
+	}
+	else {
+		valid.write(true);
+	}
+
+	if (fill_level == fifo_size+1) {
+	       	full.write(true); //output of fifo is part of fifo storage
+	}
+	else {
+	      	full.write(false);
+	}
+	
 
 	//write through execution
 	if (write_through) {
+		unsigned char wrThData;
 		wrThData = d_in.read();
 		d_out.write(wrThData);
-		cout << std::setw(9) << sc_time_stamp() << ": '" << name()
-					<< " Wrote through " << (int)wrThData << " to d_out, " << " wr_ptr: " << (int)wr_ptr.read() << ", FIFO fill level: " << (int)fill_level << endl;
+		//cout << std::setw(9) << sc_time_stamp() << ": '" << name()
+		//			<< " Wrote through " << (int)wrThData << " to d_out, " << " wr_ptr: " << (int)wr_ptr.read() << ", FIFO fill level: " << (int)fill_level << endl;
 
 	}
 	//write execution
 	if (write) {
+		unsigned char wrData;
+		unsigned int locw = wr_ptr.read();
 		wrData = d_in.read();
 		fifo_data[locw] = wrData;
 		locw = (locw+1)%fifo_size;
 		wr_ptr.write(locw);
-		cout << std::setw(9) << sc_time_stamp() << ": '" << name()
-					<< " Wrote " << (int)wrData << " to FIFO, " << " wr_ptr: " << (int)wr_ptr.read() << ", FIFO fill level: " << (int)fill_level << endl;
+		//cout << std::setw(9) << sc_time_stamp() << ": '" << name()
+		//			<< " Wrote " << (int)wrData << " to FIFO, " << " wr_ptr: " << (int)wr_ptr.read() << ", FIFO fill level: " << (int)fill_level << endl;
 
 	}
 	if(read) {
+		unsigned char rdData;
+		unsigned int locr = rd_ptr.read();
 		rdData = fifo_data[locr];
 		d_out.write(rdData);
 		locr = (locr+1)%fifo_size;
 		rd_ptr.write(locr);
-		cout << std::setw(9) << sc_time_stamp() << ": '" << name()
-					<< " Read " << (int)rdData << " from FIFO, " << "rd_ptr: " << (int)rd_ptr.read() << ", FIFO fill level: " << (int)fill_level << endl;
+		//cout << std::setw(9) << sc_time_stamp() << ": '" << name()
+		//			<< " Read " << (int)rdData << " from FIFO, " << "rd_ptr: " << (int)rd_ptr.read() << ", FIFO fill level: " << (int)fill_level << endl;
 
 	}
 
-	}
+}
 
 
 

@@ -25,10 +25,10 @@ public:
 	bool read_fifo(unsigned char *data, unsigned int &count);
 	bool write_fifo(unsigned char *data, unsigned int &count);
 
-	SC_HAS_PROCESS(fifo_2);
 
 	// ############# COMPLETE THE FOLLOWING SECTION ############# //
 	// constructor declaration
+	SC_HAS_PROCESS(fifo_2);
 	fifo_2(sc_module_name name, unsigned int fifo_size);
 	// ####################### UP TO HERE ####################### //
 };

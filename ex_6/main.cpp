@@ -13,7 +13,7 @@ using namespace sc_core;
 int sc_main(int argc, char *argv[]) {
 
 	// set some global variables; see $HOME/npu_common/globaldefs.h
-	do_logging = 0x08; //logging for CPU
+	do_logging = LOG_CPU; //logging for CPU
 	MAX_PACKETS = 20;
 
 	/*********************************************************************/

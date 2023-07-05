@@ -1,0 +1,101 @@
+cmd.optionValue 0x2
+do_logging 2
+628 ns memory: trans 0x7ffd2d076ff0 received, phase BEGIN_REQ, delay 0 s
+631 ns memory: sending trans 0x7ffd2d076ff0, phase BEGIN_RESP
+798 ns memory: trans 0x7ffd2d074548 received, phase BEGIN_REQ, delay 0 s
+801 ns memory: sending trans 0x7ffd2d074548, phase BEGIN_RESP
+1088 ns memory: trans 0x7ffd2d0761b8 received, phase BEGIN_REQ, delay 0 s
+1091 ns memory: sending trans 0x7ffd2d0761b8, phase BEGIN_RESP
+1258 ns memory: trans 0x7efea6fb6e90 received, phase BEGIN_REQ, delay 0 s
+1268 ns memory: sending trans 0x7efea6fb6e90, phase BEGIN_RESP
+1388 ns memory: trans 0x7ffd2d076ff0 received, phase BEGIN_REQ, delay 0 s
+1388 ns memory: trans 0x7ffd2d074548 received, phase BEGIN_REQ, delay 0 s
+1391 ns memory: sending trans 0x7ffd2d076ff0, phase BEGIN_RESP
+1551 ns memory: sending trans 0x7ffd2d074548, phase BEGIN_RESP
+1745 ns memory: trans 0x7ffd2d0761b8 received, phase BEGIN_REQ, delay 0 s
+1748 ns memory: sending trans 0x7ffd2d0761b8, phase BEGIN_RESP
+2276 ns memory: trans 0x7ffd2d074548 received, phase BEGIN_REQ, delay 0 s
+2279 ns memory: sending trans 0x7ffd2d074548, phase BEGIN_RESP
+2900 ns memory: trans 0x7ffd2d074548 received, phase BEGIN_REQ, delay 0 s
+2903 ns memory: sending trans 0x7ffd2d074548, phase BEGIN_RESP
+3842 ns memory: trans 0x7ffd2d076ff0 received, phase BEGIN_REQ, delay 0 s
+3845 ns memory: sending trans 0x7ffd2d076ff0, phase BEGIN_RESP
+4450 ns memory: trans 0x7ffd2d076ff0 received, phase BEGIN_REQ, delay 0 s
+4453 ns memory: sending trans 0x7ffd2d076ff0, phase BEGIN_RESP
+5758 ns memory: trans 0x7efea6fb6e90 received, phase BEGIN_REQ, delay 0 s
+5761 ns memory: sending trans 0x7efea6fb6e90, phase BEGIN_RESP
+5961 ns memory: trans 0x7ffd2d074548 received, phase BEGIN_REQ, delay 0 s
+5971 ns memory: sending trans 0x7ffd2d074548, phase BEGIN_RESP
+6158 ns memory: trans 0x7ffd2d075380 received, phase BEGIN_REQ, delay 0 s
+6161 ns memory: sending trans 0x7ffd2d075380, phase BEGIN_RESP
+6385 ns memory: trans 0x7efea6fb6e90 received, phase BEGIN_REQ, delay 0 s
+6395 ns memory: sending trans 0x7efea6fb6e90, phase BEGIN_RESP
+10885 ns memory: trans 0x7efea6fb6e90 received, phase BEGIN_REQ, delay 0 s
+10888 ns memory: sending trans 0x7efea6fb6e90, phase BEGIN_RESP
+11088 ns memory: trans 0x7ffd2d074548 received, phase BEGIN_REQ, delay 0 s
+11098 ns memory: sending trans 0x7ffd2d074548, phase BEGIN_RESP
+11405 ns memory: trans 0x7efea6fb6e90 received, phase BEGIN_REQ, delay 0 s
+11415 ns memory: sending trans 0x7efea6fb6e90, phase BEGIN_RESP
+14641 ns memory: trans 0x7ffd2d075380 received, phase BEGIN_REQ, delay 0 s
+14644 ns memory: sending trans 0x7ffd2d075380, phase BEGIN_RESP
+15905 ns memory: trans 0x7efea6fb6e90 received, phase BEGIN_REQ, delay 0 s
+15908 ns memory: sending trans 0x7efea6fb6e90, phase BEGIN_RESP
+16108 ns memory: trans 0x7ffd2d074548 received, phase BEGIN_REQ, delay 0 s
+16118 ns memory: sending trans 0x7ffd2d074548, phase BEGIN_RESP
+16385 ns memory: trans 0x7efea6fb6e90 received, phase BEGIN_REQ, delay 0 s
+16395 ns memory: sending trans 0x7efea6fb6e90, phase BEGIN_RESP
+16515 ns memory: trans 0x7ffd2d076ff0 received, phase BEGIN_REQ, delay 0 s
+16518 ns memory: sending trans 0x7ffd2d076ff0, phase BEGIN_RESP
+17405 ns memory: trans 0x7ffd2d0761b8 received, phase BEGIN_REQ, delay 0 s
+17408 ns memory: sending trans 0x7ffd2d0761b8, phase BEGIN_RESP
+17655 ns memory: trans 0x7ffd2d076ff0 received, phase BEGIN_REQ, delay 0 s
+17658 ns memory: sending trans 0x7ffd2d076ff0, phase BEGIN_RESP
+18260001 ps memory: trans 0x7ffd2d076ff0 received, phase BEGIN_REQ, delay 0 s
+18263001 ps memory: sending trans 0x7ffd2d076ff0, phase BEGIN_RESP
+20885 ns memory: trans 0x7efea6fb6e90 received, phase BEGIN_REQ, delay 0 s
+20888 ns memory: sending trans 0x7efea6fb6e90, phase BEGIN_RESP
+21088 ns memory: trans 0x7ffd2d074548 received, phase BEGIN_REQ, delay 0 s
+21098 ns memory: sending trans 0x7ffd2d074548, phase BEGIN_RESP
+21365 ns memory: trans 0x7efea6fb6e90 received, phase BEGIN_REQ, delay 0 s
+21375 ns memory: sending trans 0x7efea6fb6e90, phase BEGIN_RESP
+23526 ns memory: trans 0x7ffd2d075380 received, phase BEGIN_REQ, delay 0 s
+23529 ns memory: sending trans 0x7ffd2d075380, phase BEGIN_RESP
+24329001 ps memory: trans 0x7ffd2d0761b8 received, phase BEGIN_REQ, delay 0 s
+24332001 ps memory: sending trans 0x7ffd2d0761b8, phase BEGIN_RESP
+24937001 ps memory: trans 0x7ffd2d0761b8 received, phase BEGIN_REQ, delay 0 s
+24940001 ps memory: sending trans 0x7ffd2d0761b8, phase BEGIN_RESP
+25865 ns memory: trans 0x7efea6fb6e90 received, phase BEGIN_REQ, delay 0 s
+25868 ns memory: sending trans 0x7efea6fb6e90, phase BEGIN_RESP
+26068 ns memory: trans 0x7ffd2d074548 received, phase BEGIN_REQ, delay 0 s
+26078 ns memory: sending trans 0x7ffd2d074548, phase BEGIN_RESP
+26365 ns memory: trans 0x7efea6fb6e90 received, phase BEGIN_REQ, delay 0 s
+26375 ns memory: sending trans 0x7efea6fb6e90, phase BEGIN_RESP
+
+Info: /OSCI/SystemC: Simulation stopped by user.
+====================================================================
+	load statistics
+====================================================================
+CPU0 total processing time: 21750 ns
+CPU0 total transfer time  : 3954 ns
+CPU0 load: processing 80.5%, transferring 14.6%, in sum: 95.1%.
+bus total transfer time  : 7368 ns
+bus load: transferring 27.3%.
+====================================================================
+	packet statistics
+====================================================================
+n_packets_received = 20
+n_packets_dropped_input_mac = 0
+n_packets_sent = 5
+
+latency:
+	min: 5523 ns
+	max: 24946 ns
+	avg: 15257600 ps
+io_module.eth3_out sent out 0 packets
+io_module.eth2_out sent out 0 packets
+io_module.eth1_out sent out 0 packets
+io_module.eth0_out sent out 5 packets
+io_module.eth3_in received 8 packets.
+io_module.eth2_in received 6 packets.
+io_module.eth1_in received 5 packets.
+io_module.eth0_in received 5 packets.

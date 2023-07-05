@@ -1,0 +1,282 @@
+cmd.optionValue 0x4
+do_logging 4
+608 ns io_module.dma_ch3: trans 0x7fff584000a0 sent. Addr:0x00000000, phase: BEGIN_REQ
+628 ns io_module.dma_ch3: transaction waiting begin-response on backward path
+631 ns io_module.dma_ch3: nb_transport_bw (0x7fff584000a0, BEGIN_RESP, 160 ns) from Addr:0x00000000
+688 ns io_module.dma_ch0: trans 0x7fff583fd5f8 sent. Addr:0x000007D0, phase: BEGIN_REQ
+708 ns io_module.dma_ch0: transaction waiting begin-response on backward path
+801 ns io_module.dma_ch0: nb_transport_bw (0x7fff583fd5f8, BEGIN_RESP, 200 ns) from Addr:0x000007D0
+1029 ns io_module.dma_ch2: trans 0x7fff583ff268 sent. Addr:0x00000FA0, phase: BEGIN_REQ
+1049 ns io_module.dma_ch2: transaction waiting begin-response on backward path
+1091 ns io_module.dma_ch2: nb_transport_bw (0x7fff583ff268, BEGIN_RESP, 160 ns) from Addr:0x00000FA0
+1298 ns io_module.dma_ch3: trans 0x7fff584000a0 sent. Addr:0x00001770, phase: BEGIN_REQ
+1312 ns io_module.dma_ch0: trans 0x7fff583fd5f8 sent. Addr:0x00001F40, phase: BEGIN_REQ
+1318 ns io_module.dma_ch3: transaction waiting begin-response on backward path
+1332 ns io_module.dma_ch0: transaction waiting begin-response on backward path
+1391 ns io_module.dma_ch3: nb_transport_bw (0x7fff584000a0, BEGIN_RESP, 160 ns) from Addr:0x00001770
+1558 ns io_module.dma_ch0: nb_transport_bw (0x7fff583fd5f8, BEGIN_RESP, 180 ns) from Addr:0x00001F40
+1637 ns io_module.dma_ch2: trans 0x7fff583ff268 sent. Addr:0x00002710, phase: BEGIN_REQ
+1657 ns io_module.dma_ch2: transaction waiting begin-response on backward path
+1748 ns io_module.dma_ch2: nb_transport_bw (0x7fff583ff268, BEGIN_RESP, 160 ns) from Addr:0x00002710
+2256 ns io_module.dma_ch0: trans 0x7fff583fd5f8 sent. Addr:0x00002EE0, phase: BEGIN_REQ
+2276 ns io_module.dma_ch0: transaction waiting begin-response on backward path
+2279 ns io_module.dma_ch0: nb_transport_bw (0x7fff583fd5f8, BEGIN_RESP, 280 ns) from Addr:0x00002EE0
+2880 ns io_module.dma_ch0: trans 0x7fff583fd5f8 sent. Addr:0x000036B0, phase: BEGIN_REQ
+2900 ns io_module.dma_ch0: transaction waiting begin-response on backward path
+2903 ns io_module.dma_ch0: nb_transport_bw (0x7fff583fd5f8, BEGIN_RESP, 180 ns) from Addr:0x000036B0
+3822 ns io_module.dma_ch3: trans 0x7fff584000a0 sent. Addr:0x00003E80, phase: BEGIN_REQ
+3842 ns io_module.dma_ch3: transaction waiting begin-response on backward path
+3845 ns io_module.dma_ch3: nb_transport_bw (0x7fff584000a0, BEGIN_RESP, 340 ns) from Addr:0x00003E80
+4430 ns io_module.dma_ch3: trans 0x7fff584000a0 sent. Addr:0x00004650, phase: BEGIN_REQ
+4450 ns io_module.dma_ch3: transaction waiting begin-response on backward path
+4453 ns io_module.dma_ch3: nb_transport_bw (0x7fff584000a0, BEGIN_RESP, 160 ns) from Addr:0x00004650
+5901 ns io_module.dma_ch0: nb_transport_fw (0x7f64e4ab6e90, BEGIN_REQ, 0 s) for Addr:0x00000000
+5901 ns io_module.dma_ch0: trans 0x7fff583fd5f8 sent. Addr:0x00000000, phase: BEGIN_REQ
+5921 ns io_module.dma_ch0: transaction waiting begin-response on backward path
+5971 ns io_module.dma_ch0: nb_transport_bw (0x7fff583fd5f8, BEGIN_RESP, 160 ns) from Addr:0x00000000
+6055 ns io_module.dma_ch1: trans 0x7fff583fe430 sent. Addr:0x00004E20, phase: BEGIN_REQ
+6075 ns io_module.dma_ch1: transaction waiting begin-response on backward path
+6218 ns io_module.dma_ch1: nb_transport_bw (0x7fff583fe430, BEGIN_RESP, 160 ns) from Addr:0x00004E20
+11028 ns io_module.dma_ch0: nb_transport_fw (0x7f64e4ab6e90, BEGIN_REQ, 0 s) for Addr:0x00000000
+11028 ns io_module.dma_ch0: trans 0x7fff583fd5f8 sent. Addr:0x000007D0, phase: BEGIN_REQ
+11048 ns io_module.dma_ch0: transaction waiting begin-response on backward path
+11098 ns io_module.dma_ch0: nb_transport_bw (0x7fff583fd5f8, BEGIN_RESP, 200 ns) from Addr:0x000007D0
+14621 ns io_module.dma_ch1: trans 0x7fff583fe430 sent. Addr:0x000055F0, phase: BEGIN_REQ
+14641 ns io_module.dma_ch1: transaction waiting begin-response on backward path
+14644 ns io_module.dma_ch1: nb_transport_bw (0x7fff583fe430, BEGIN_RESP, 160 ns) from Addr:0x000055F0
+16048 ns io_module.dma_ch0: nb_transport_fw (0x7f64e4ab6e90, BEGIN_REQ, 0 s) for Addr:0x00000000
+16048 ns io_module.dma_ch0: trans 0x7fff583fd5f8 sent. Addr:0x00000FA0, phase: BEGIN_REQ
+16068 ns io_module.dma_ch0: transaction waiting begin-response on backward path
+16118 ns io_module.dma_ch0: nb_transport_bw (0x7fff583fd5f8, BEGIN_RESP, 160 ns) from Addr:0x00000FA0
+16477001 ps io_module.dma_ch3: trans 0x7fff584000a0 sent. Addr:0x00005DC0, phase: BEGIN_REQ
+16497001 ps io_module.dma_ch3: transaction waiting begin-response on backward path
+16518 ns io_module.dma_ch3: nb_transport_bw (0x7fff584000a0, BEGIN_RESP, 880 ns) from Addr:0x00005DC0
+17215001 ps io_module.dma_ch2: trans 0x7fff583ff268 sent. Addr:0x00006590, phase: BEGIN_REQ
+17235001 ps io_module.dma_ch2: transaction waiting begin-response on backward path
+17408 ns io_module.dma_ch2: nb_transport_bw (0x7fff583ff268, BEGIN_RESP, 240 ns) from Addr:0x00006590
+17578001 ps io_module.dma_ch3: trans 0x7fff584000a0 sent. Addr:0x00006D60, phase: BEGIN_REQ
+17598001 ps io_module.dma_ch3: transaction waiting begin-response on backward path
+17658 ns io_module.dma_ch3: nb_transport_bw (0x7fff584000a0, BEGIN_RESP, 160 ns) from Addr:0x00006D60
+18240001 ps io_module.dma_ch3: trans 0x7fff584000a0 sent. Addr:0x00007530, phase: BEGIN_REQ
+18260001 ps io_module.dma_ch3: transaction waiting begin-response on backward path
+18263001 ps io_module.dma_ch3: nb_transport_bw (0x7fff584000a0, BEGIN_RESP, 160 ns) from Addr:0x00007530
+21028 ns io_module.dma_ch0: nb_transport_fw (0x7f64e4ab6e90, BEGIN_REQ, 0 s) for Addr:0x00000000
+21028 ns io_module.dma_ch0: trans 0x7fff583fd5f8 sent. Addr:0x00001770, phase: BEGIN_REQ
+21048 ns io_module.dma_ch0: transaction waiting begin-response on backward path
+21098 ns io_module.dma_ch0: nb_transport_bw (0x7fff583fd5f8, BEGIN_RESP, 160 ns) from Addr:0x00001770
+23506 ns io_module.dma_ch1: trans 0x7fff583fe430 sent. Addr:0x00000000, phase: BEGIN_REQ
+23526 ns io_module.dma_ch1: transaction waiting begin-response on backward path
+23529 ns io_module.dma_ch1: nb_transport_bw (0x7fff583fe430, BEGIN_RESP, 160 ns) from Addr:0x00000000
+24309001 ps io_module.dma_ch2: trans 0x7fff583ff268 sent. Addr:0x000007D0, phase: BEGIN_REQ
+24329001 ps io_module.dma_ch2: transaction waiting begin-response on backward path
+24332001 ps io_module.dma_ch2: nb_transport_bw (0x7fff583ff268, BEGIN_RESP, 180 ns) from Addr:0x000007D0
+24917001 ps io_module.dma_ch2: trans 0x7fff583ff268 sent. Addr:0x00000FA0, phase: BEGIN_REQ
+24937001 ps io_module.dma_ch2: transaction waiting begin-response on backward path
+24940001 ps io_module.dma_ch2: nb_transport_bw (0x7fff583ff268, BEGIN_RESP, 160 ns) from Addr:0x00000FA0
+26008 ns io_module.dma_ch0: nb_transport_fw (0x7f64e4ab6e90, BEGIN_REQ, 0 s) for Addr:0x00000000
+26008 ns io_module.dma_ch0: trans 0x7fff583fd5f8 sent. Addr:0x00001F40, phase: BEGIN_REQ
+26028 ns io_module.dma_ch0: transaction waiting begin-response on backward path
+26078 ns io_module.dma_ch0: nb_transport_bw (0x7fff583fd5f8, BEGIN_RESP, 180 ns) from Addr:0x00001F40
+27026 ns io_module.dma_ch1: trans 0x7fff583fe430 sent. Addr:0x00001770, phase: BEGIN_REQ
+27046 ns io_module.dma_ch1: transaction waiting begin-response on backward path
+27049 ns io_module.dma_ch1: nb_transport_bw (0x7fff583fe430, BEGIN_RESP, 160 ns) from Addr:0x00001770
+31008 ns io_module.dma_ch0: nb_transport_fw (0x7f64e4ab6e90, BEGIN_REQ, 0 s) for Addr:0x00000000
+31008 ns io_module.dma_ch0: trans 0x7fff583fd5f8 sent. Addr:0x00002710, phase: BEGIN_REQ
+31028 ns io_module.dma_ch0: transaction waiting begin-response on backward path
+31078 ns io_module.dma_ch0: nb_transport_bw (0x7fff583fd5f8, BEGIN_RESP, 160 ns) from Addr:0x00002710
+35988 ns io_module.dma_ch0: nb_transport_fw (0x7f64e4ab6e90, BEGIN_REQ, 0 s) for Addr:0x00000000
+35988 ns io_module.dma_ch0: trans 0x7fff583fd5f8 sent. Addr:0x00002EE0, phase: BEGIN_REQ
+36008 ns io_module.dma_ch0: transaction waiting begin-response on backward path
+36058 ns io_module.dma_ch0: nb_transport_bw (0x7fff583fd5f8, BEGIN_RESP, 280 ns) from Addr:0x00002EE0
+36426002 ps io_module.dma_ch0: trans 0x7fff583fd5f8 sent. Addr:0x00001F40, phase: BEGIN_REQ
+36446002 ps io_module.dma_ch0: transaction waiting begin-response on backward path
+36449002 ps io_module.dma_ch0: nb_transport_bw (0x7fff583fd5f8, BEGIN_RESP, 280 ns) from Addr:0x00001F40
+37050002 ps io_module.dma_ch0: trans 0x7fff583fd5f8 sent. Addr:0x00002710, phase: BEGIN_REQ
+37070002 ps io_module.dma_ch0: transaction waiting begin-response on backward path
+37073002 ps io_module.dma_ch0: nb_transport_bw (0x7fff583fd5f8, BEGIN_RESP, 180 ns) from Addr:0x00002710
+38122002 ps io_module.dma_ch0: trans 0x7fff583fd5f8 sent. Addr:0x00002EE0, phase: BEGIN_REQ
+38142002 ps io_module.dma_ch0: transaction waiting begin-response on backward path
+38145002 ps io_module.dma_ch0: nb_transport_bw (0x7fff583fd5f8, BEGIN_RESP, 320 ns) from Addr:0x00002EE0
+41369002 ps io_module.dma_ch0: nb_transport_fw (0x7f64e4ab6e90, BEGIN_REQ, 0 s) for Addr:0x00000000
+41369002 ps io_module.dma_ch0: trans 0x7fff583fd5f8 sent. Addr:0x000036B0, phase: BEGIN_REQ
+41389002 ps io_module.dma_ch0: transaction waiting begin-response on backward path
+41439002 ps io_module.dma_ch0: nb_transport_bw (0x7fff583fd5f8, BEGIN_RESP, 180 ns) from Addr:0x000036B0
+41619002 ps io_module.dma_ch3: trans 0x7fff584000a0 sent. Addr:0x000036B0, phase: BEGIN_REQ
+41639002 ps io_module.dma_ch3: transaction waiting begin-response on backward path
+41706002 ps io_module.dma_ch3: nb_transport_bw (0x7fff584000a0, BEGIN_RESP, 160 ns) from Addr:0x000036B0
+46516002 ps io_module.dma_ch0: nb_transport_fw (0x7f64e4ab6e90, BEGIN_REQ, 0 s) for Addr:0x00000000
+46516002 ps io_module.dma_ch0: trans 0x7fff583fd5f8 sent. Addr:0x00003E80, phase: BEGIN_REQ
+46536002 ps io_module.dma_ch0: transaction waiting begin-response on backward path
+46586002 ps io_module.dma_ch0: nb_transport_bw (0x7fff583fd5f8, BEGIN_RESP, 340 ns) from Addr:0x00003E80
+46926002 ps io_module.dma_ch2: trans 0x7fff583ff268 sent. Addr:0x00003E80, phase: BEGIN_REQ
+46946002 ps io_module.dma_ch2: transaction waiting begin-response on backward path
+47013002 ps io_module.dma_ch2: nb_transport_bw (0x7fff583ff268, BEGIN_RESP, 160 ns) from Addr:0x00003E80
+51823002 ps io_module.dma_ch0: nb_transport_fw (0x7f64e4ab6e90, BEGIN_REQ, 0 s) for Addr:0x00000000
+51823002 ps io_module.dma_ch0: trans 0x7fff583fd5f8 sent. Addr:0x00004650, phase: BEGIN_REQ
+51843002 ps io_module.dma_ch0: transaction waiting begin-response on backward path
+51893002 ps io_module.dma_ch0: nb_transport_bw (0x7fff583fd5f8, BEGIN_RESP, 160 ns) from Addr:0x00004650
+52053002 ps io_module.dma_ch2: trans 0x7fff583ff268 sent. Addr:0x00004650, phase: BEGIN_REQ
+52073002 ps io_module.dma_ch2: transaction waiting begin-response on backward path
+52140002 ps io_module.dma_ch2: nb_transport_bw (0x7fff583ff268, BEGIN_RESP, 160 ns) from Addr:0x00004650
+56950002 ps io_module.dma_ch0: nb_transport_fw (0x7f64e4ab6e90, BEGIN_REQ, 0 s) for Addr:0x00000000
+56950002 ps io_module.dma_ch0: trans 0x7fff583fd5f8 sent. Addr:0x00004E20, phase: BEGIN_REQ
+56970002 ps io_module.dma_ch0: transaction waiting begin-response on backward path
+57020002 ps io_module.dma_ch0: nb_transport_bw (0x7fff583fd5f8, BEGIN_RESP, 160 ns) from Addr:0x00004E20
+57180002 ps io_module.dma_ch2: trans 0x7fff583ff268 sent. Addr:0x00004E20, phase: BEGIN_REQ
+57200002 ps io_module.dma_ch2: transaction waiting begin-response on backward path
+57267002 ps io_module.dma_ch2: nb_transport_bw (0x7fff583ff268, BEGIN_RESP, 200 ns) from Addr:0x00004E20
+62117002 ps io_module.dma_ch0: nb_transport_fw (0x7f64e4ab6e90, BEGIN_REQ, 0 s) for Addr:0x00000000
+62117002 ps io_module.dma_ch0: trans 0x7fff583fd5f8 sent. Addr:0x000055F0, phase: BEGIN_REQ
+62137002 ps io_module.dma_ch0: transaction waiting begin-response on backward path
+62187002 ps io_module.dma_ch0: nb_transport_bw (0x7fff583fd5f8, BEGIN_RESP, 160 ns) from Addr:0x000055F0
+62347002 ps io_module.dma_ch2: trans 0x7fff583ff268 sent. Addr:0x000055F0, phase: BEGIN_REQ
+62367002 ps io_module.dma_ch2: transaction waiting begin-response on backward path
+62434002 ps io_module.dma_ch2: nb_transport_bw (0x7fff583ff268, BEGIN_RESP, 160 ns) from Addr:0x000055F0
+67244002 ps io_module.dma_ch0: nb_transport_fw (0x7f64e4ab6e90, BEGIN_REQ, 0 s) for Addr:0x00000000
+67244002 ps io_module.dma_ch0: trans 0x7fff583fd5f8 sent. Addr:0x00005DC0, phase: BEGIN_REQ
+67264002 ps io_module.dma_ch0: transaction waiting begin-response on backward path
+67314002 ps io_module.dma_ch0: nb_transport_bw (0x7fff583fd5f8, BEGIN_RESP, 880 ns) from Addr:0x00005DC0
+68194002 ps io_module.dma_ch1: trans 0x7fff583fe430 sent. Addr:0x00005DC0, phase: BEGIN_REQ
+68214002 ps io_module.dma_ch1: transaction waiting begin-response on backward path
+68281002 ps io_module.dma_ch1: nb_transport_bw (0x7fff583fe430, BEGIN_RESP, 160 ns) from Addr:0x00005DC0
+73091002 ps io_module.dma_ch0: nb_transport_fw (0x7f64e4ab6e90, BEGIN_REQ, 0 s) for Addr:0x00000000
+73091002 ps io_module.dma_ch0: trans 0x7fff583fd5f8 sent. Addr:0x00006590, phase: BEGIN_REQ
+73111002 ps io_module.dma_ch0: transaction waiting begin-response on backward path
+73161002 ps io_module.dma_ch0: nb_transport_bw (0x7fff583fd5f8, BEGIN_RESP, 240 ns) from Addr:0x00006590
+73401002 ps io_module.dma_ch2: trans 0x7fff583ff268 sent. Addr:0x00006590, phase: BEGIN_REQ
+73421002 ps io_module.dma_ch2: transaction waiting begin-response on backward path
+73488002 ps io_module.dma_ch2: nb_transport_bw (0x7fff583ff268, BEGIN_RESP, 160 ns) from Addr:0x00006590
+78298002 ps io_module.dma_ch0: nb_transport_fw (0x7f64e4ab6e90, BEGIN_REQ, 0 s) for Addr:0x00000000
+78298002 ps io_module.dma_ch0: trans 0x7fff583fd5f8 sent. Addr:0x00006D60, phase: BEGIN_REQ
+78318002 ps io_module.dma_ch0: transaction waiting begin-response on backward path
+78368002 ps io_module.dma_ch0: nb_transport_bw (0x7fff583fd5f8, BEGIN_RESP, 160 ns) from Addr:0x00006D60
+78528002 ps io_module.dma_ch2: trans 0x7fff583ff268 sent. Addr:0x00006D60, phase: BEGIN_REQ
+78548002 ps io_module.dma_ch2: transaction waiting begin-response on backward path
+78615002 ps io_module.dma_ch2: nb_transport_bw (0x7fff583ff268, BEGIN_RESP, 240 ns) from Addr:0x00006D60
+83505002 ps io_module.dma_ch0: nb_transport_fw (0x7f64e4ab6e90, BEGIN_REQ, 0 s) for Addr:0x00000000
+83505002 ps io_module.dma_ch0: trans 0x7fff583fd5f8 sent. Addr:0x00007530, phase: BEGIN_REQ
+83525002 ps io_module.dma_ch0: transaction waiting begin-response on backward path
+83575002 ps io_module.dma_ch0: nb_transport_bw (0x7fff583fd5f8, BEGIN_RESP, 160 ns) from Addr:0x00007530
+83735002 ps io_module.dma_ch1: trans 0x7fff583fe430 sent. Addr:0x00007530, phase: BEGIN_REQ
+83755002 ps io_module.dma_ch1: transaction waiting begin-response on backward path
+83822002 ps io_module.dma_ch1: nb_transport_bw (0x7fff583fe430, BEGIN_RESP, 160 ns) from Addr:0x00007530
+88632002 ps io_module.dma_ch0: nb_transport_fw (0x7f64e4ab6e90, BEGIN_REQ, 0 s) for Addr:0x00000000
+88632002 ps io_module.dma_ch0: trans 0x7fff583fd5f8 sent. Addr:0x00000000, phase: BEGIN_REQ
+88652002 ps io_module.dma_ch0: transaction waiting begin-response on backward path
+88702002 ps io_module.dma_ch0: nb_transport_bw (0x7fff583fd5f8, BEGIN_RESP, 160 ns) from Addr:0x00000000
+88862002 ps io_module.dma_ch1: trans 0x7fff583fe430 sent. Addr:0x00000000, phase: BEGIN_REQ
+88882002 ps io_module.dma_ch1: transaction waiting begin-response on backward path
+88949002 ps io_module.dma_ch1: nb_transport_bw (0x7fff583fe430, BEGIN_RESP, 160 ns) from Addr:0x00000000
+93759002 ps io_module.dma_ch2: nb_transport_fw (0x7f64e4ab6e90, BEGIN_REQ, 0 s) for Addr:0x00000000
+93759002 ps io_module.dma_ch2: trans 0x7fff583ff268 sent. Addr:0x000007D0, phase: BEGIN_REQ
+93779002 ps io_module.dma_ch2: transaction waiting begin-response on backward path
+93829002 ps io_module.dma_ch2: nb_transport_bw (0x7fff583ff268, BEGIN_RESP, 180 ns) from Addr:0x000007D0
+94009002 ps io_module.dma_ch1: trans 0x7fff583fe430 sent. Addr:0x000007D0, phase: BEGIN_REQ
+94029002 ps io_module.dma_ch1: transaction waiting begin-response on backward path
+94096002 ps io_module.dma_ch1: nb_transport_bw (0x7fff583fe430, BEGIN_RESP, 160 ns) from Addr:0x000007D0
+98906002 ps io_module.dma_ch2: nb_transport_fw (0x7f64e4ab6e90, BEGIN_REQ, 0 s) for Addr:0x00000000
+98906002 ps io_module.dma_ch2: trans 0x7fff583ff268 sent. Addr:0x00000FA0, phase: BEGIN_REQ
+98926002 ps io_module.dma_ch2: transaction waiting begin-response on backward path
+98976002 ps io_module.dma_ch2: nb_transport_bw (0x7fff583ff268, BEGIN_RESP, 160 ns) from Addr:0x00000FA0
+99136002 ps io_module.dma_ch0: trans 0x7fff583fd5f8 sent. Addr:0x00000FA0, phase: BEGIN_REQ
+99156002 ps io_module.dma_ch0: transaction waiting begin-response on backward path
+99223002 ps io_module.dma_ch0: nb_transport_bw (0x7fff583fd5f8, BEGIN_RESP, 180 ns) from Addr:0x00000FA0
+104053002 ps io_module.dma_ch2: nb_transport_fw (0x7f64e4ab6e90, BEGIN_REQ, 0 s) for Addr:0x00000000
+104053002 ps io_module.dma_ch2: trans 0x7fff583ff268 sent. Addr:0x00001770, phase: BEGIN_REQ
+104073002 ps io_module.dma_ch2: transaction waiting begin-response on backward path
+104123002 ps io_module.dma_ch2: nb_transport_bw (0x7fff583ff268, BEGIN_RESP, 160 ns) from Addr:0x00001770
+104283002 ps io_module.dma_ch0: trans 0x7fff583fd5f8 sent. Addr:0x00001770, phase: BEGIN_REQ
+104303002 ps io_module.dma_ch0: transaction waiting begin-response on backward path
+104370002 ps io_module.dma_ch0: nb_transport_bw (0x7fff583fd5f8, BEGIN_RESP, 320 ns) from Addr:0x00001770
+109340002 ps io_module.dma_ch2: nb_transport_fw (0x7f64e4ab6e90, BEGIN_REQ, 0 s) for Addr:0x00000000
+109340002 ps io_module.dma_ch2: trans 0x7fff583ff268 sent. Addr:0x00001F40, phase: BEGIN_REQ
+109360002 ps io_module.dma_ch2: transaction waiting begin-response on backward path
+109410002 ps io_module.dma_ch2: nb_transport_bw (0x7fff583ff268, BEGIN_RESP, 280 ns) from Addr:0x00001F40
+109690002 ps io_module.dma_ch1: trans 0x7fff583fe430 sent. Addr:0x00001F40, phase: BEGIN_REQ
+109710002 ps io_module.dma_ch1: transaction waiting begin-response on backward path
+109777002 ps io_module.dma_ch1: nb_transport_bw (0x7fff583fe430, BEGIN_RESP, 160 ns) from Addr:0x00001F40
+114587002 ps io_module.dma_ch2: nb_transport_fw (0x7f64e4ab6e90, BEGIN_REQ, 0 s) for Addr:0x00000000
+114587002 ps io_module.dma_ch2: trans 0x7fff583ff268 sent. Addr:0x00002710, phase: BEGIN_REQ
+114607002 ps io_module.dma_ch2: transaction waiting begin-response on backward path
+114657002 ps io_module.dma_ch2: nb_transport_bw (0x7fff583ff268, BEGIN_RESP, 180 ns) from Addr:0x00002710
+114837002 ps io_module.dma_ch1: trans 0x7fff583fe430 sent. Addr:0x00002710, phase: BEGIN_REQ
+114857002 ps io_module.dma_ch1: transaction waiting begin-response on backward path
+114924002 ps io_module.dma_ch1: nb_transport_bw (0x7fff583fe430, BEGIN_RESP, 160 ns) from Addr:0x00002710
+119734002 ps io_module.dma_ch2: nb_transport_fw (0x7f64e4ab6e90, BEGIN_REQ, 0 s) for Addr:0x00000000
+119734002 ps io_module.dma_ch2: trans 0x7fff583ff268 sent. Addr:0x00002EE0, phase: BEGIN_REQ
+119754002 ps io_module.dma_ch2: transaction waiting begin-response on backward path
+119804002 ps io_module.dma_ch2: nb_transport_bw (0x7fff583ff268, BEGIN_RESP, 320 ns) from Addr:0x00002EE0
+120124002 ps io_module.dma_ch0: trans 0x7fff583fd5f8 sent. Addr:0x00002EE0, phase: BEGIN_REQ
+120144002 ps io_module.dma_ch0: transaction waiting begin-response on backward path
+120211002 ps io_module.dma_ch0: nb_transport_bw (0x7fff583fd5f8, BEGIN_RESP, 320 ns) from Addr:0x00002EE0
+125181002 ps io_module.dma_ch2: nb_transport_fw (0x7f64e4ab6e90, BEGIN_REQ, 0 s) for Addr:0x00000000
+125181002 ps io_module.dma_ch2: trans 0x7fff583ff268 sent. Addr:0x000036B0, phase: BEGIN_REQ
+125201002 ps io_module.dma_ch2: transaction waiting begin-response on backward path
+125251002 ps io_module.dma_ch2: nb_transport_bw (0x7fff583ff268, BEGIN_RESP, 160 ns) from Addr:0x000036B0
+125411002 ps io_module.dma_ch0: trans 0x7fff583fd5f8 sent. Addr:0x000036B0, phase: BEGIN_REQ
+125431002 ps io_module.dma_ch0: transaction waiting begin-response on backward path
+125498002 ps io_module.dma_ch0: nb_transport_bw (0x7fff583fd5f8, BEGIN_RESP, 320 ns) from Addr:0x000036B0
+130468002 ps io_module.dma_ch2: nb_transport_fw (0x7f64e4ab6e90, BEGIN_REQ, 0 s) for Addr:0x00000000
+130468002 ps io_module.dma_ch2: trans 0x7fff583ff268 sent. Addr:0x00003E80, phase: BEGIN_REQ
+130488002 ps io_module.dma_ch2: transaction waiting begin-response on backward path
+130538002 ps io_module.dma_ch2: nb_transport_bw (0x7fff583ff268, BEGIN_RESP, 160 ns) from Addr:0x00003E80
+130698002 ps io_module.dma_ch0: trans 0x7fff583fd5f8 sent. Addr:0x00003E80, phase: BEGIN_REQ
+130718002 ps io_module.dma_ch0: transaction waiting begin-response on backward path
+130785002 ps io_module.dma_ch0: nb_transport_bw (0x7fff583fd5f8, BEGIN_RESP, 320 ns) from Addr:0x00003E80
+135755002 ps io_module.dma_ch2: nb_transport_fw (0x7f64e4ab6e90, BEGIN_REQ, 0 s) for Addr:0x00000000
+135755002 ps io_module.dma_ch2: trans 0x7fff583ff268 sent. Addr:0x00004650, phase: BEGIN_REQ
+135775002 ps io_module.dma_ch2: transaction waiting begin-response on backward path
+135825002 ps io_module.dma_ch2: nb_transport_bw (0x7fff583ff268, BEGIN_RESP, 160 ns) from Addr:0x00004650
+135985002 ps io_module.dma_ch0: trans 0x7fff583fd5f8 sent. Addr:0x00004650, phase: BEGIN_REQ
+136005002 ps io_module.dma_ch0: transaction waiting begin-response on backward path
+136072002 ps io_module.dma_ch0: nb_transport_bw (0x7fff583fd5f8, BEGIN_RESP, 500 ns) from Addr:0x00004650
+141222002 ps io_module.dma_ch2: nb_transport_fw (0x7f64e4ab6e90, BEGIN_REQ, 0 s) for Addr:0x00000000
+141222002 ps io_module.dma_ch2: trans 0x7fff583ff268 sent. Addr:0x00004E20, phase: BEGIN_REQ
+141242002 ps io_module.dma_ch2: transaction waiting begin-response on backward path
+141292002 ps io_module.dma_ch2: nb_transport_bw (0x7fff583ff268, BEGIN_RESP, 200 ns) from Addr:0x00004E20
+141492002 ps io_module.dma_ch0: trans 0x7fff583fd5f8 sent. Addr:0x00004E20, phase: BEGIN_REQ
+141512002 ps io_module.dma_ch0: transaction waiting begin-response on backward path
+141579002 ps io_module.dma_ch0: nb_transport_bw (0x7fff583fd5f8, BEGIN_RESP, 360 ns) from Addr:0x00004E20
+146589002 ps io_module.dma_ch2: nb_transport_fw (0x7f64e4ab6e90, BEGIN_REQ, 0 s) for Addr:0x00000000
+146589002 ps io_module.dma_ch2: trans 0x7fff583ff268 sent. Addr:0x000055F0, phase: BEGIN_REQ
+146609002 ps io_module.dma_ch2: transaction waiting begin-response on backward path
+146659002 ps io_module.dma_ch2: nb_transport_bw (0x7fff583ff268, BEGIN_RESP, 160 ns) from Addr:0x000055F0
+146819002 ps io_module.dma_ch1: trans 0x7fff583fe430 sent. Addr:0x000055F0, phase: BEGIN_REQ
+146839002 ps io_module.dma_ch1: transaction waiting begin-response on backward path
+146906002 ps io_module.dma_ch1: nb_transport_bw (0x7fff583fe430, BEGIN_RESP, 160 ns) from Addr:0x000055F0
+151716002 ps io_module.dma_ch2: nb_transport_fw (0x7f64e4ab6e90, BEGIN_REQ, 0 s) for Addr:0x00000000
+151716002 ps io_module.dma_ch2: trans 0x7fff583ff268 sent. Addr:0x00005DC0, phase: BEGIN_REQ
+151736002 ps io_module.dma_ch2: transaction waiting begin-response on backward path
+151786002 ps io_module.dma_ch2: nb_transport_bw (0x7fff583ff268, BEGIN_RESP, 160 ns) from Addr:0x00005DC0
+151946002 ps io_module.dma_ch0: trans 0x7fff583fd5f8 sent. Addr:0x00005DC0, phase: BEGIN_REQ
+151966002 ps io_module.dma_ch0: transaction waiting begin-response on backward path
+152033002 ps io_module.dma_ch0: nb_transport_bw (0x7fff583fd5f8, BEGIN_RESP, 320 ns) from Addr:0x00005DC0
+
+Info: /OSCI/SystemC: Simulation stopped by user.
+====================================================================
+	load statistics
+====================================================================
+CPU0 total processing time: 126150 ns
+CPU0 total transfer time  : 25549002 ps
+CPU0 load: processing 82.1%, transferring 16.6%, in sum: 98.8%.
+bus total transfer time  : 28098 ns
+bus load: transferring 18.3%.
+====================================================================
+	packet statistics
+====================================================================
+n_packets_received = 100
+n_packets_dropped_input_mac = 32
+n_packets_sent = 29
+
+latency:
+	min: 5523 ns
+	max: 100918 ns
+	avg: 58402139 ps
+io_module.eth3_out sent out 0 packets
+io_module.eth2_out sent out 12 packets
+io_module.eth1_out sent out 0 packets
+io_module.eth0_out sent out 17 packets
+io_module.eth3_in received 14 packets.
+io_module.eth2_in received 60 packets.
+io_module.eth1_in received 13 packets.
+io_module.eth0_in received 17 packets.

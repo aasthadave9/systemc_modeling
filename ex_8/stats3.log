@@ -1,0 +1,37 @@
+cmd.optionValue 0x8
+do_logging 8
+
+Info: /OSCI/SystemC: Simulation stopped by user.
+====================================================================
+	load statistics
+====================================================================
+CPU0 total processing time: 126150 ns
+CPU0 total transfer time  : 25726007 ps
+CPU0 load: processing 82.1%, transferring 16.8%, in sum: 98.9%.
+CPU1 total processing time: 121800 ns
+CPU1 total transfer time  : 26268004 ps
+CPU1 load: processing 79.3%, transferring 17.1%, in sum: 96.4%.
+CPU2 total processing time: 126150 ns
+CPU2 total transfer time  : 26356007 ps
+CPU2 load: processing 82.1%, transferring 17.2%, in sum: 99.3%.
+bus total transfer time  : 72995 ns
+bus load: transferring 47.5%.
+====================================================================
+	packet statistics
+====================================================================
+n_packets_received = 100
+n_packets_dropped_input_mac = 0
+n_packets_sent = 86
+
+latency:
+	min: 5432 ns
+	max: 144455002 ps
+	avg: 15923488 ps
+io_module.eth3_out sent out 0 packets
+io_module.eth2_out sent out 16 packets
+io_module.eth1_out sent out 4 packets
+io_module.eth0_out sent out 66 packets
+io_module.eth3_in received 14 packets.
+io_module.eth2_in received 60 packets.
+io_module.eth1_in received 13 packets.
+io_module.eth0_in received 17 packets.

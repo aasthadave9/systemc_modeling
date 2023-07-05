@@ -14,9 +14,7 @@ void Cpu::processor_thread(void) {
 	int header_len = sizeof(sc_time)+sizeof(uint64_t)+IpPacket::MINIMAL_IP_HEADER_LENGTH;
 	soc_address_t baseAddr = m_packet_descriptor.baseAddress;
 	int outq_addr_array[4] = {0x20000000, 0x30000000, 0x40000000, 0x50000000};
-	
-	//start transaction to read from header starting addr
-			
+				
 	while (true) {
 		wait(packetReceived_interrupt.value_changed_event());
 		

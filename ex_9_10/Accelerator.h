@@ -70,7 +70,8 @@ public:
 
 	// ############# COMPLETE THE FOLLOWING SECTION ############# //
 	// Write down the Declaration of the Constructor of the Parameterized Accelerator module
-
+	SC_HAS_PROCESS(Accelerator);
+	Accelerator(sc_module_name name, unsigned int lookupCycles); 
 	// ####################### UP TO HERE ####################### //
 
 	/** Destructor, frees memory allocated for irq. */

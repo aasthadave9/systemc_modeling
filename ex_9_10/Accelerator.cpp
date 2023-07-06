@@ -7,27 +7,26 @@ using namespace std;
 
 // ############# COMPLETE THE FOLLOWING SECTION ############# //
 // complete constructor parameters
-Accelerator::Accelerator() :
+Accelerator::Accelerator(sc_module_name name, unsigned int lookupCycles):
 	// enter the required initializationes here
-
+	ACC_IP_LOOKUP_CYCLES(lookupCycles),	
 // ####################### UP TO HERE ####################### //
 
-		// further initializations - leave them as they are
-		// Initialize requests depth and call other constructors
-		requests(9),
-		rt(lutConfigFile, '|'),
-		transaction_queue("transaction_queue")
+	// further initializations - leave them as they are
+	// Initialize requests depth and call other constructors
+	requests(9),
+	rt(lutConfigFile, '|'),
+	transaction_queue("transaction_queue")
 {
+		/// provide an interrupt line per CPU
+		irq = new sc_out<bool>[n_cpus];
 
-	/// provide an interrupt line per CPU
-	irq = new sc_out<bool>[n_cpus];
+		/// register nonblocking callback with the target socket
+		target_socket.register_nb_transport_fw(this,&Accelerator::nb_transport_fw);
 
-	/// register nonblocking callback with the target socket
-	target_socket.register_nb_transport_fw(this,&Accelerator::nb_transport_fw);
-
-	/// register threads
-	SC_THREAD(accelerator_thread);
-	SC_THREAD(transaction_thread);
+		/// register threads
+		SC_THREAD(accelerator_thread);
+		SC_THREAD(transaction_thread);
 }
 
 void Accelerator::accelerator_thread() {

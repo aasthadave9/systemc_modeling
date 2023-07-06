@@ -10,7 +10,7 @@ void Cpu::processor_thread(void) {
 		// ############# COMPLETE THE FOLLOWING SECTION ############# //
 		// read new packet descriptor
 	
-	int data_len = sizeof(m_packet_descriptor);
+	unsigned int data_len = sizeof(m_packet_descriptor);
 	
 	//loopback packet to random output queue
 	int outq_addr_array[4] = {0x20000000, 0x30000000, 0x40000000, 0x50000000};

@@ -10,8 +10,8 @@ void Cpu::processor_thread(void) {
 		// ############# COMPLETE THE FOLLOWING SECTION ############# //
 		// read new packet descriptor
 	
-	int data_len = sizeof(m_packet_descriptor);
-	int header_len = sizeof(sc_time)+sizeof(uint64_t)+IpPacket::MINIMAL_IP_HEADER_LENGTH;
+	unsigned int data_len = sizeof(m_packet_descriptor);
+	unsigned int header_len = sizeof(sc_time)+sizeof(uint64_t)+IpPacket::MINIMAL_IP_HEADER_LENGTH;
 	soc_address_t baseAddr = m_packet_descriptor.baseAddress;
 	int outq_addr_array[4] = {0x20000000, 0x30000000, 0x40000000, 0x50000000};
 	
@@ -37,7 +37,7 @@ void Cpu::processor_thread(void) {
 			if(verifyHeaderIntegrity(m_packet_header)) {
 				int nexthop = makeNHLookup(m_packet_header);
 				int destAddr = outq_addr_array[nexthop];
-				int newttl = decrementTTL(m_packet_header);
+				decrementTTL(m_packet_header);
 				updateChecksum(m_packet_header);
 
 				// cpu write req to mem -> sends pkt header

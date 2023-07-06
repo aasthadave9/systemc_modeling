@@ -10,8 +10,8 @@ void Cpu::processor_thread(void) {
 		// ############# COMPLETE THE FOLLOWING SECTION ############# //
 		// read new packet descriptor
 	
-	int data_len = sizeof(m_packet_descriptor);
-	int header_len = sizeof(sc_time)+sizeof(uint64_t)+IpPacket::MINIMAL_IP_HEADER_LENGTH;
+	unsigned int data_len = sizeof(m_packet_descriptor);
+	unsigned int header_len = sizeof(sc_time)+sizeof(uint64_t)+IpPacket::MINIMAL_IP_HEADER_LENGTH;
 	soc_address_t baseAddr = m_packet_descriptor.baseAddress;
 	int outq_addr_array[4] = {0x20000000, 0x30000000, 0x40000000, 0x50000000};
 				
@@ -32,7 +32,7 @@ void Cpu::processor_thread(void) {
 				int nexthop = makeNHLookup(m_packet_header);
 				wait(CPU_IP_LOOKUP_CYCLES*CLK_CYCLE_CPU);
 				int destAddr = outq_addr_array[nexthop];
-				int newttl = decrementTTL(m_packet_header);
+				decrementTTL(m_packet_header);
 				wait(CPU_DECREMENT_TTL_CYCLES*CLK_CYCLE_CPU);
 				updateChecksum(m_packet_header);
 				wait(CPU_UPDATE_CHECKSUM_CYCLES*CLK_CYCLE_CPU); )
@@ -48,8 +48,7 @@ void Cpu::processor_thread(void) {
 			else { //write packet descriptor to discard queue
 			        MEASURE_PROCESSING_TIME(
 			       	wait(CPU_VERIFY_HEADER_CYCLES*CLK_CYCLE_CPU); )
-				cout << "discarding a packet" << endl;
-				
+								
 				MEASURE_TRANSFER_TIME(
 			        startTransaction(TLM_WRITE_COMMAND, 0x10000000, 
 				(unsigned char *) &m_packet_descriptor, data_len);)

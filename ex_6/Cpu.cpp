@@ -57,11 +57,11 @@ void Cpu::startTransaction(tlm_command command, soc_address_t address,
 		
 		result = initiator_socket->nb_transport_fw(trans, phase, delay);
 
-		//wait till response from bus (target) arrives
+		//wait till response from target arrives
 		wait(transactionFinished_event);
 	
 		if(result != TLM_UPDATED || phase != END_REQ) {
-				cout << std::setw(9) << sc_time_stamp() << ": '" << name() << "'\tprotocol error! " << "Packet descriptor request not completed appropriately" << endl;
+				cout << std::setw(9) << sc_time_stamp() << ": '" << name() << "'\tProtocol error! " << "Packet descriptor read/write request not completed appropriately" << endl;
 				exit(1);	
 		}
 		status = trans.get_response_status();
@@ -82,7 +82,7 @@ tlm_sync_enum Cpu::nb_transport_bw(tlm_generic_payload& transaction,
 		tlm_phase& phase, sc_time& delay_time) {
 	// ############# COMPLETE THE FOLLOWING SECTION ############# //
 	if(phase != BEGIN_RESP) {
-		cout << std::setw(9) << sc_time_stamp() << ": '" << name() << "'\tprotocol error! " << "Response could not be set up" << endl;
+		cout << std::setw(9) << sc_time_stamp() << ": '" << name() << "'\tProtocol error! " << "Response could not be set up" << endl;
 	}
 	
 	delay_time += sc_time(CLK_CYCLE_BUS);	

@@ -158,7 +158,7 @@ int sc_main(int argc, char *argv[]) {
 		// Write down the Instantiation of the Parameterized Accelerator module
 		// with IP Lookup time as parameter
 		accelerator = new Accelerator("accelerator", 40);
-		//Accelerator accelerator("accelerator", 40);	
+			
 		// ####################### UP TO HERE ####################### //
 	}
 
